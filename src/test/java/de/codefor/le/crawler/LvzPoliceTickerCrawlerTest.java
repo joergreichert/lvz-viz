@@ -1,9 +1,7 @@
 package de.codefor.le.crawler;
 
 import static org.hamcrest.Matchers.startsWith;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import java.util.Iterator;
 import java.util.concurrent.ExecutionException;

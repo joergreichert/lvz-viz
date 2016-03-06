@@ -70,13 +70,15 @@ public class CrawlScheduler {
         return result;
     }
 
-    private Iterable<PoliceTicker> crawlDetailPages(final Iterable<String> detailPageUrls) throws InterruptedException, ExecutionException {
+    private Iterable<PoliceTicker> crawlDetailPages(final Iterable<String> detailPageUrls)
+            throws InterruptedException, ExecutionException {
         final Future<Iterable<PoliceTicker>> detailFuture = detailCrawler.execute(detailPageUrls);
         final Iterable<PoliceTicker> details = detailFuture.get();
         return details;
     }
 
-    void addCoordsToPoliceTickerInformation(final Iterable<PoliceTicker> articles) throws InterruptedException, ExecutionException {
+    void addCoordsToPoliceTickerInformation(final Iterable<PoliceTicker> articles)
+            throws InterruptedException, ExecutionException {
         logger.debug("addCoordsToPoliceTickerInformation for various articles");
         for (final PoliceTicker policeTicker : articles) {
             logger.debug("process article {}", policeTicker.getUrl());
@@ -84,7 +86,8 @@ public class CrawlScheduler {
             // TODO - replace to bulk threading (not every page in one thread)
             for (final String location : ner.getLocations(policeTicker.getArticle(), true)) {
                 logger.debug("search {} in nominatim", location);
-                final Future<List<Nominatim>> nomFutures = nominatimAsker.execute(NominatimAsker.NOMINATIM_SEARCH_CITY_PREFIX + location);
+                final Future<List<Nominatim>> nomFutures = nominatimAsker
+                        .execute(NominatimAsker.NOMINATIM_SEARCH_CITY_PREFIX + location);
                 final List<Nominatim> nominatim = nomFutures.get();
                 logger.debug("{} coords: {}", policeTicker.getUrl(), nominatim);
                 if (!nominatim.isEmpty()) {
@@ -106,8 +109,10 @@ public class CrawlScheduler {
     /**
      * Set coordinates from nominatim to policeTicker if valid
      *
-     * @param policeTicker PoliceTicker
-     * @param nominatim Nominatim
+     * @param policeTicker
+     *            PoliceTicker
+     * @param nominatim
+     *            Nominatim
      * @return true if nominatim contains valid coordinates
      */
     private static boolean setCoordsIfValid(final PoliceTicker policeTicker, final Nominatim nominatim) {
