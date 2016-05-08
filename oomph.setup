@@ -183,13 +183,9 @@
       <requirement
           name="org.springsource.ide.eclipse.commons.quicksearch.feature.feature.group"/>
       <requirement
-          name="pl.com.tt.fontsize.feature.group"/>
-      <requirement
           name="de.bastiankrol.startexplorer.feature.feature.group"/>
       <repository
           url="http://dist.springsource.com/release/TOOLS/update/e4.4/"/>
-      <repository
-          url="http://plm.tt.com.pl/eclipse-plugins/updateSite/"/>
       <repository
           url="http://basti1302.github.com/startexplorer/update/"/>
     </setupTask>
