@@ -107,7 +107,7 @@
       <requirement
           name="org.springframework.ide.eclipse.feature.feature.group"/>
       <repository
-          url="http://dist.springsource.com/release/TOOLS/update/e4.4/"/>
+          url="http://dist.springsource.com/release/TOOLS/update/e4.5/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -147,22 +147,6 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="Groovy">
-      <requirement
-          name="org.codehaus.groovy23.feature.feature.group"/>
-      <requirement
-          name="org.codehaus.groovy.eclipse.feature.feature.group"/>
-      <requirement
-          name="org.codehaus.groovy.headless.feature.feature.group"/>
-      <requirement
-          name="org.codehaus.groovy.compilerless.feature.feature.group"/>
-      <requirement
-          name="org.codehaus.groovy.jdt.patch.feature.group"/>
-      <repository
-          url="http://dist.springsource.org/release/GRECLIPSE/e4.4/"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
         label="XML">
       <requirement
           name="org.eclipse.wst.common_core.feature.feature.group"/>
@@ -185,7 +169,7 @@
       <requirement
           name="de.bastiankrol.startexplorer.feature.feature.group"/>
       <repository
-          url="http://dist.springsource.com/release/TOOLS/update/e4.4/"/>
+          url="http://dist.springsource.com/release/TOOLS/update/e4.5/"/>
       <repository
           url="http://basti1302.github.com/startexplorer/update/"/>
     </setupTask>
@@ -1593,7 +1577,7 @@
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.5"/>
         <repository
-            url="http://dist.springsource.com/release/TOOLS/update/e4.4/"/>
+            url="http://dist.springsource.com/release/TOOLS/update/e4.5/"/>
         <repository
             url="http://eclipse-update.palantir.com/eclipse-typescript/"/>
         <repository
