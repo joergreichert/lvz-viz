@@ -1,6 +1,6 @@
 # lvz-viz
 
-[![Build Status](https://travis-ci.org/joergreichert/lvz-viz.png?branch=master)](https://travis-ci.org/jrlover/lvz-viz)
+[![Build Status](https://travis-ci.org/joergreichert/lvz-viz.png?branch=master)](https://travis-ci.org/joergreichert/lvz-viz)
 [![Code Climate](https://codeclimate.com/github/CodeforLeipzig/lvz-viz/badges/gpa.svg)](https://codeclimate.com/github/CodeforLeipzig/lvz-viz)
 
 ## Intro
