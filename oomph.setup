@@ -107,7 +107,7 @@
       <requirement
           name="org.springframework.ide.eclipse.feature.feature.group"/>
       <repository
-          url="http://dist.springsource.com/release/TOOLS/update/e4.5/"/>
+          url="http://dist.springsource.com/release/TOOLS/update/e4.4/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -139,11 +139,25 @@
         xsi:type="setup.p2:P2Task"
         label="Gradle">
       <requirement
-          name="org.springsource.ide.eclipse.gradle.feature.feature.group"/>
-      <requirement
-          name="org.springframework.ide.eclipse.uaa.feature.feature.group"/>
+          name="org.eclipse.buildship.feature.group"/>
       <repository
-          url="http://dist.springsource.com/milestone/TOOLS/gradle"/>
+          url="http://download.eclipse.org/buildship/updates/e45/milestones/2.x"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Groovy">
+      <requirement
+          name="org.codehaus.groovy23.feature.feature.group"/>
+      <requirement
+          name="org.codehaus.groovy.eclipse.feature.feature.group"/>
+      <requirement
+          name="org.codehaus.groovy.headless.feature.feature.group"/>
+      <requirement
+          name="org.codehaus.groovy.compilerless.feature.feature.group"/>
+      <requirement
+          name="org.codehaus.groovy.jdt.patch.feature.group"/>
+      <repository
+          url="http://dist.springsource.org/release/GRECLIPSE/e4.4/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -167,9 +181,13 @@
       <requirement
           name="org.springsource.ide.eclipse.commons.quicksearch.feature.feature.group"/>
       <requirement
+          name="pl.com.tt.fontsize.feature.group"/>
+      <requirement
           name="de.bastiankrol.startexplorer.feature.feature.group"/>
       <repository
-          url="http://dist.springsource.com/release/TOOLS/update/e4.5/"/>
+          url="http://dist.springsource.com/release/TOOLS/update/e4.4/"/>
+      <repository
+          url="http://plm.tt.com.pl/eclipse-plugins/updateSite/"/>
       <repository
           url="http://basti1302.github.com/startexplorer/update/"/>
     </setupTask>
@@ -1577,7 +1595,7 @@
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.5"/>
         <repository
-            url="http://dist.springsource.com/release/TOOLS/update/e4.5/"/>
+            url="http://dist.springsource.com/release/TOOLS/update/e4.4/"/>
         <repository
             url="http://eclipse-update.palantir.com/eclipse-typescript/"/>
         <repository
